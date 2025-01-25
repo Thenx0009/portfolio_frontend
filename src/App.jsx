@@ -15,7 +15,7 @@ const App = () => {
   useEffect(() => {
     const fetchPortfolio = async () => {
       try {
-        const response = await fetch('${process.env.REACT_APP_API_URL}/api/portfolio');
+        const response = await fetch('https://portfolio-backend-latest-xngv.onrender.com/api/portfolio');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${ response.status }`);
         }

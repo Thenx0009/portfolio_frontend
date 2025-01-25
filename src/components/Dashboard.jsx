@@ -14,7 +14,7 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "${process.env.REACT_APP_API_URL}/api/stocks/dashboard"
+          "https://portfolio-backend-latest-xngv.onrender.com/api/stocks/dashboard"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch dashboard data");

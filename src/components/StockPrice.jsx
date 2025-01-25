@@ -11,12 +11,7 @@ const StockPrice = () => {
       setLoading(true);
       setError(null);
       try {
-        // const response = await fetch(`http://localhost:8080/api/stocks/${ticker}/price`);
-      
-        console.log(`Here: ${process.env.REACT_APP_API_URL}`);
-        console.log('Environment Variable:', process.env.REACT_APP_API_URL);
-
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/stocks/real-time-price/${ticker}`);
+        const response = await fetch(`https://portfolio-backend-latest-xngv.onrender.com/api/stocks/real-time-price/${ticker}`);
         if (!response.ok) {
           throw new Error('Failed to fetch stock price');
         }

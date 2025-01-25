@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Poppins", serif;
+}
+/* Hide the spinner in number input fields */
+.no-spinner::-webkit-inner-spin-button, 
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+}
+
+
+
+/* .active{
+  background-color: rgb(74, 221, 121);
+  padding: 5px 10px;
+  border-radius: 5px;
+} */
+
+.table-position{
+  background-position: 10px 10px;
+}
+
+.table-position {
+  background-color: var(--black);
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: moveGrid 2s linear infinite;
+}
+@keyframes moveGrid {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 50px 50px;
+  }
+}

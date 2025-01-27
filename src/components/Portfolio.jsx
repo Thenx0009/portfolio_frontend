@@ -150,7 +150,7 @@ const Portfolio = ({ wishlist, setWishlist, isLoading, onBuyStock  }) => {
       </div>
 
       {/* Portfolio Table */}
-      <div className="bg-gray-100 py-3 px-3 rounded-3xl shadow-2xl w-[90vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] mt-8">
+      <div className="bg-gray-100 py-3 px-3 rounded-3xl shadow-2xl w-[85vw] sm:w-[93vw] md:w-[80vw] lg:w-[70vw] mt-8">
         <h2 className="text-xl font-semibold text-gray-700 mb-4">Your Portfolio</h2>
         {isLoadingPortfolio ? (
           <p className="text-gray-500 text-center">Loading portfolio...</p>
@@ -158,12 +158,12 @@ const Portfolio = ({ wishlist, setWishlist, isLoading, onBuyStock  }) => {
           <table className="table-auto w-full border-collapse border border-gray-300">
             <thead>
               <tr className="bg-gray-200">
-                <th className="border border-gray-300 px-4 py-2">Name</th>
-                <th className="border border-gray-300 px-4 py-2">Ticker</th>
-                <th className="border border-gray-300 px-4 py-2">Quantity</th>
-                <th className="border border-gray-300 px-4 py-2">Buy Price</th>
-                <th className="border border-gray-300 px-4 py-2">Current Price</th>
-                <th className="border border-gray-300 px-4 py-2">P&L</th>
+                <th className="border border-gray-300 px-1 py-1 text-[12px] sm:text-[17px] sm:px-4 sm:py-2">Name</th>
+                <th className="border border-gray-300 px-1 py-1 text-[12px] sm:text-[17px] sm:px-4 sm:py-2">Ticker</th>
+                <th className="border border-gray-300 px-1 py-1 text-[12px] sm:text-[17px] sm:px-4 sm:py-2">Quantity</th>
+                <th className="border border-gray-300 px-1 py-1 text-[12px] sm:text-[17px] sm:px-4 sm:py-2">Buy Price</th>
+                <th className="border border-gray-300 px-1 py-1 text-[12px] sm:text-[17px] sm:px-4 sm:py-2">Current Price</th>
+                <th className="border border-gray-300 px-1 py-1 text-[12px] sm:text-[17px] sm:px-4 sm:py-2">P&L</th>
               </tr>
             </thead>
             <tbody>
@@ -173,16 +173,16 @@ const Portfolio = ({ wishlist, setWishlist, isLoading, onBuyStock  }) => {
 
                 return (
                   <tr key={index} className="text-center">
-                    <td className="border border-gray-300 px-4 py-2">{stock.name}</td>
-                    <td className="border border-gray-300 px-4 py-2">{stock.ticker}</td>
-                    <td className="border border-gray-300 px-4 py-2">{stock.quantity}</td>
-                    <td className="border border-gray-300 px-4 py-2">
+                    <td className="border border-gray-300 px-1 py-1 text-[10px] sm:text-[17px] sm:px-4 sm:py-2">{stock.name}</td>
+                    <td className="border border-gray-300 px-1 py-1 text-[10px] sm:text-[17px] sm:px-4 sm:py-2">{stock.ticker}</td>
+                    <td className="border border-gray-300 px-1 py-1 text-[10px] sm:text-[17px] sm:px-4 sm:py-2">{stock.quantity}</td>
+                    <td className="border border-gray-300 px-1 py-1 text-[10px] sm:text-[17px] sm:px-4 sm:py-2">
                       ${stock.buyPrice?.toFixed(2) || 'N/A'}
                     </td>
-                    <td className="border border-gray-300 px-4 py-2">
+                    <td className="border border-gray-300 px-1 py-1 text-[10px] sm:text-[17px] sm:px-4 sm:py-2">
                       ${stock.currentPrice?.toFixed(2) || 'N/A'}
                     </td>
-                    <td className={`border border-gray-300 px-4 py-2 ${isProfit ? 'text-green-600' : 'text-red-600'}`}>
+                    <td className={`border border-gray-300 px-1 py-1 text-[10px] sm:text-[17px] sm:px-4 sm:py-2 ${isProfit ? 'text-green-600' : 'text-red-600'}`}>
                       ${profitLoss} {isProfit ? '(Profit)' : '(Loss)'}
                     </td>
                   </tr>

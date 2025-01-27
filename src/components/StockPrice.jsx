@@ -35,7 +35,7 @@ const StockPrice = () => {
 
   return (
     <div className="pt-14 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8">
-      <h1 className="text-2xl md:text-4xl font-bold text-green-600 mb-6 text-center">Stock Price Checker</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-green-600 mb-6 text-center">Stock Price Checker</h1>
       <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md mx-auto">
         <div className="mb-4">
           <label className="block text-gray-700 font-semibold mb-2">

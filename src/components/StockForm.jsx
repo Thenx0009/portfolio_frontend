@@ -126,7 +126,7 @@ const StockForm = () => {
   return (
     <div className="pt-14 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-2xl md:text-3xl font-bold mb-5 text-center text-green-600">
+        <h1 className="text-3xl md:text-4xl font-bold mb-5 text-center text-green-600">
           {isEditMode ? 'Edit Stock' : 'Add New Stock'}
         </h1>
         <form className="space-y-6" onSubmit={handleSubmit}>

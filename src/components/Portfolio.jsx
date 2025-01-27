@@ -100,7 +100,7 @@ const Portfolio = ({ wishlist, setWishlist, isLoading, onBuyStock  }) => {
 
   return (
     <div className="mt-14 flex flex-col items-center px-4 md:px-0">
-      <h1 className="text-[18px] sm:text-2xl md:text-4xl text-green-600 py-4 px-5 rounded-xl font-bold">
+      <h1 className="text-3xl sm:text-2xl md:text-4xl text-green-600 py-4 px-5 rounded-xl font-bold">
         My Portfolio
       </h1>
 
